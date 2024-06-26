@@ -51,3 +51,6 @@ done
 desmat.csv and conmat.csv, defined just after line 30 are design and contrast matrices for main effect and interaction that include the diagnostic group, age, sex, scanner, social cognitive scores, etc information.
 At about line 87, we are using the output of the script we ran on part 4 (i.e. compute_vertices_from_surface.sh) that computes the vertecies adjacency.
 After line 110, we are actually runnin PALM and finding differences using the design and contrast matrices.
+
+
+6 - There are 3 individual variability scripts in R. The calc_ind_var_slow4.R and calc_ind_var_slow5.R calculate individual varibility separatly for slow 4 and slow 5. In this code, after dividing individuals based on diagnostic group, average pairwise correlattion distance for each individual is calculated. In the MCD_model_plot.R script, the slow 4 and slow 5 MCD models are tested statistically and significant findings are then plotted using the R ggplot package.
