@@ -28,12 +28,6 @@ write.csv(new_falff_data_Dec2023, "new_falff_data_Dec2023.csv")
 
 
 
-new_falff_data_Dec2023$diagnostic_group <- as.factor(new_falff_data_Dec2023$diagnostic_group)
-new_falff_data_Dec2023$diagnostic_group <- relevel(new_falff_data_Dec2023$diagnostic_group, "TDC")
-new_falff_data_Dec2023
-
-
-
 ### Plotting slow 4 MCD Models
 # Slow 4 MCD as a function of diagnostic group
 ggplot(data = new_falff_data_Dec2023, aes(x = diagnostic_group, y = MCD_4)) +
